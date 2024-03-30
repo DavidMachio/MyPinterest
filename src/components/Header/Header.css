@@ -1,0 +1,111 @@
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.394);
+}
+
+
+
+.logo {
+    height: 40px;
+}
+.contenedorBotones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.contenedorIconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+
+.inicio, .explorar{
+    height: 40px;
+    color: black;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.barraBusqueda {
+    display: flex;
+    width: 100%;
+
+}
+.buscador {
+    height: 40px;
+    width:100%;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    background-color: rgb(227, 227, 227);
+    border: none;
+    border-right: 1px solid rgb(181, 181, 181);
+    outline: none;
+}
+.buscador::placeholder {
+    color: rgb(111, 111, 111);
+    font-weight: 100;
+    font-size: 16px;
+    font-style: italic;
+
+}
+
+.buscar {
+    height: 40px;
+    width:90px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(227, 227, 227);
+    border: none;
+
+}
+.buscar:active {
+    background-color: red;
+}
+.likeList, .profile {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.iconoActive{
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.active {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 700px){
+    .contenedorBotones, .contenedorIconos{
+        height: 60px;
+        position:fixed;
+        background-color: white;
+        padding: 5px;
+        
+        bottom: 0;
+        z-index: 100;
+    }
+    .contenedorIconos{
+        width: 35%;
+        right: 0;
+    }
+    .contenedorBotones{
+        width: 65%;
+        left: 0;
+    }
+   
+}
+

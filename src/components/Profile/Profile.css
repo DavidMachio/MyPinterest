@@ -1,0 +1,96 @@
+.sectionProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+}
+
+.imgProfile {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.firstName {
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.userName {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(144, 144, 144);
+}
+.profileEdit {
+    font-weight: 600;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+.formulario {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 500px;
+    width: 400px;
+    border: 1px solid rgb(159, 159, 159);
+    border-radius: 5px;
+    padding: 50px;
+
+}
+.oculto {
+    display: none;
+}
+.profileImagenes {
+    height: 100px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.optionProfile {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    transition: all 0.5s;
+}
+.selected{
+    padding: 2px;
+    border: 2px solid red;
+    height: 70px;
+    width:70px;
+}
+.inputNombre, .inputUserName {
+    background-color: rgb(212, 212, 212);
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 300px;
+    height: 50px;
+    outline: none;
+}
+.aceptar {
+    height: 40px;
+    color: black;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
