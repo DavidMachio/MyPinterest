@@ -2,9 +2,9 @@
 
 import { printInicio } from '../../Funciones/inicio';
 import { printScroll } from '../../Funciones/scroll';
-import { printBusqueda } from '../../Funciones/printBusqueda';
 
 import './Main.css'
+import { loadProfileFromLocalStorage } from '../Profile/Profile';
 
 
 
@@ -12,8 +12,9 @@ export const printMain = () => {
 
     
     printInicio();
-    printScroll()
-}
-;
+    printScroll();
+    
+        
+      };
 
 

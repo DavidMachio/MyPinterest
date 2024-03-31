@@ -15,20 +15,14 @@ export const printBusqueda = (word, page) => {
     getRandoms(word, page)
     .then((imageList) => {
         if (imageList == 0) {
-            console.log('este es el valor de ' + buscador)
-            console.log(valor)
             valor = ''
             buscador.value = ''
             buscador.textContent = ''
-            console.log(valor)
-            console.log(buscador.value)
             primeraBusqueda = true
-            console.log(primeraBusqueda)
 
              printMensaje('No se han encontrado resultados', 'Pero...¿que te parece esto?')
         printInicio()
         } else {
-            console.log('else')
             createImages(imageList);
         }
     })

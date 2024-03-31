@@ -137,10 +137,11 @@ export const loadProfileFromLocalStorage = () => {
     fotoPerfil = profileData.fotoPerfil;
     nombre = profileData.nombre;
     nombreUsuario = profileData.nombreUsuario;
+    profile.src = profileData.fotoPerfil
   }
   
 };
 
 // Llama a la función para cargar los datos del perfil al cargar la aplicación
-loadProfileFromLocalStorage();
+//loadProfileFromLocalStorage();
 

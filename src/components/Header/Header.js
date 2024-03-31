@@ -1,7 +1,7 @@
 import { printBusqueda } from '../../Funciones/printBusqueda';
 import { printInicio } from '../../Funciones/inicio';
 import { printMensaje } from '../../Funciones/printMensaje';
-import {  printProfile } from '../Profile/Profile';
+import {  loadProfileFromLocalStorage, printProfile } from '../Profile/Profile';
 
 
 
@@ -136,7 +136,7 @@ buscar.addEventListener('click', () => {
         profile.classList.add('iconoActive')
         printProfile();
 
-        localStorage.setItem('profileImage', profile.src);
+        //localStorage.setItem('profileImage', profile.src);
     })
     
 
