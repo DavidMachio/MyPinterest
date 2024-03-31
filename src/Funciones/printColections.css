@@ -2,6 +2,14 @@
     font-size: 35px;
     text-align: center;
 }
+.subtitle {
+    background-color: rgb(236, 236, 236);
+    width: 350px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(172, 172, 172);
+}
 .containerColections {
     width: 100%;
     display: flex;

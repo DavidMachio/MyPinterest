@@ -11,11 +11,13 @@ import { printColection } from '../../Funciones/printColection';
 const app = document.querySelector('#app')
 const header = document.querySelector('#header')
 const containerFotos = document.querySelector('#containerFotos')
-const sectionProfile = document.querySelector('.sectionProfile')
-import { page } from '../Main/Main';
 export let inputValue = ''
 export let profile;
+export const buscador = document.createElement('input');
 
+export const clearSearchInput = () => {
+    buscador.value = '';
+};
 
 export const printHeader = () => {
 
@@ -25,7 +27,7 @@ export const printHeader = () => {
     const inicio = document.createElement('button');
     const explorar = document.createElement('button');
     const barraBusqueda = document.createElement('div');
-    const buscador = document.createElement('input');
+    
     const buscar = document.createElement('button');
     const contenedorIconos = document.createElement('div')
     const likeList = document.createElement('img');
@@ -119,7 +121,8 @@ buscar.addEventListener('click', () => {
         printMensaje('Introduce una búsqueda...', 'o échale un vistazo a lo último');
         printInicio()
     }else{
-    printBusqueda(inputValue, page)
+        console.log('busqueda')
+    printBusqueda(inputValue)
     }
 })
 

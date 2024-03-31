@@ -1,15 +1,19 @@
 
 import './printColections.css'
 const app = document.querySelector('#app')
-
+export const containerColections = document.createElement('main')
+    containerColections.classList = 'containerColections'
 
 export const createColections = (colectionsList) => {
-    const containerColections = document.createElement('main')
-    containerColections.classList = 'containerColections'
+    
     const sectionColections = document.createElement('section')
     sectionColections.classList = 'sectionColections'
     const titleColections = document.createElement('h2');
     titleColections.textContent = 'Descubre la mejores colecciones'
+    
+    const subtitleColections = document.createElement('h2');
+    subtitleColections.textContent = 'O sigue viendo fotos'
+    subtitleColections.classList = 'subtitle'
     titleColections.classList = 'titleColections'
     containerColections.append(titleColections)
 
@@ -47,5 +51,6 @@ for (let i = 0; i < colectionsList.length; i++) {
 
 }
 containerColections.append(sectionColections)
+containerColections.append(subtitleColections)
 app.append(containerColections)
 }

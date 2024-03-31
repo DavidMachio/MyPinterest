@@ -32,7 +32,6 @@ const printFormulario = () => {
       optionProfile.classList.add("selected");
       fotoPerfil = photo.img;
       imgProfile.src = fotoPerfil;
-       // Actualiza la imagen de perfil del header
       profile.src = fotoPerfil;
     });
   }
@@ -116,33 +115,25 @@ export const printProfile = () => {
   profileEdit.addEventListener("click", () => printFormulario());
 };
 export const saveProfileToLocalStorage = () => {
-  // Crea un objeto con los valores que deseas almacenar
   const profileData = {
+    profile: fotoPerfil,
     fotoPerfil: fotoPerfil,
     nombre: nombre,
     nombreUsuario: nombreUsuario,
     
-    // Agrega más propiedades si es necesario
   };
 
-  // Convierte el objeto a una cadena JSON
   const profileJSON = JSON.stringify(profileData);
 
-  // Almacena la cadena JSON en el localStorage
   localStorage.setItem("profileData", profileJSON);
 };
 
-export const loadProfileFromLocalStorage = (profile) => {
-  // Obtener el perfil almacenado en el localStorage
+export const loadProfileFromLocalStorage = () => {
   const profileJSON = localStorage.getItem("profileData");
 
-  // Verificar si hay datos almacenados
   if (profileJSON) {
-    // Convertir la cadena JSON a un objeto JavaScript
     const profileData = JSON.parse(profileJSON);
 
-    // Asignar los valores del perfil
-    profile = profileData.fotoPerfil;
     fotoPerfil = profileData.fotoPerfil;
     nombre = profileData.nombre;
     nombreUsuario = profileData.nombreUsuario;
