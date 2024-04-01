@@ -19,8 +19,6 @@ export const printBusqueda = (word, page) => {
             buscador.value = ''
             buscador.textContent = ''
             primeraBusqueda = true
-
-             printMensaje('No se han encontrado resultados', 'Pero...¿que te parece esto?')
         printInicio()
         } else {
             createImages(imageList);
