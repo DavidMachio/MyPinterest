@@ -129,7 +129,6 @@ buscar.addEventListener('click', () => {
 
 
     profile.addEventListener('click', () => {
-        document.getElementById('miComponente').style.overflow = 'hidden';
         buscador.value = '';
         containerFotos.innerHTML = ''
         app.innerHTML = ''
