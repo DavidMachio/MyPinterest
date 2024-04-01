@@ -49,6 +49,7 @@
     justify-content: center;
 }
 .visitar {
+    color: black;
     display: none;
     height: 50px;
     width: 100px;

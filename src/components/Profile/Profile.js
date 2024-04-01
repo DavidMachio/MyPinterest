@@ -2,6 +2,9 @@ import { fotosProfile } from "../../data/fotosprofile";
 import  {profile}  from "../Header/Header";
 import "./Profile.css";
 
+
+
+
 const sectionProfile = document.createElement("section");
 sectionProfile.classList = 'sectionProfile'
 export let fotoPerfil = "/profile.png";
@@ -82,6 +85,8 @@ const printFormulario = () => {
 };
 
 export const printProfile = () => {
+
+ 
   app.innerHTML = "";
   sectionProfile.innerHTML = "";
 
@@ -113,6 +118,9 @@ export const printProfile = () => {
   app.append(sectionProfile);
 
   profileEdit.addEventListener("click", () => printFormulario());
+
+  
+ 
 };
 export const saveProfileToLocalStorage = () => {
   const profileData = {
@@ -142,6 +150,4 @@ export const loadProfileFromLocalStorage = () => {
   
 };
 
-// Llama a la función para cargar los datos del perfil al cargar la aplicación
-//loadProfileFromLocalStorage();
 

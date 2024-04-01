@@ -2,6 +2,8 @@ import { inputValue } from "../components/Header/Header";
 import { printInicio } from "./inicio";
 import { primeraBusqueda, printBusqueda } from "./printBusqueda";
 
+
+
 export let page = 1
 
 
